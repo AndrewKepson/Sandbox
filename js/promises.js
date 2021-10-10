@@ -3,6 +3,7 @@
 const button = document.getElementById('upper-left-button')
 const text = document.getElementById('upper-right-text')
 const windowText = document.getElementById('window-text')
+const loremButton = document.getElementById('lorem-text-button')
 
 button.addEventListener('click', async () => {
     try {
@@ -34,3 +35,12 @@ setTimeout(async () => {
         console.error(e.message)
     }
 }, 1500)
+
+loremButton.addEventListener('click', () => {
+    const loremText = document.getElementById('lorem-text')
+
+    loremButton.style.display = 'none'
+
+    fetch('https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem=1').then(res => res.json()).then(res => loremText.textContent = res)
+
+})
