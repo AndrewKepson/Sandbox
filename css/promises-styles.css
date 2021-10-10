@@ -32,7 +32,38 @@ html, body {
 
 .upper-right {
     grid-area: upper-right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+    padding: 1.75rem;
+    align-items: center;
     height: 100%;
+}
+
+#upper-right-interface {
+    background-color: rgb(173, 216, 194);
+    padding: 1.75rem;
+    height: 50%;
+    width: 100%;
+}
+
+#upper-right-interface .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid black;
+    background-color: #FFF;
+}
+
+#upper-right-interface .card .window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .lower {
