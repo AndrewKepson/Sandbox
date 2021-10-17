@@ -1,0 +1,121 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 0.1fr;
+}
+
+.above-fold {
+    width: 100%;
+}
+
+.above-fold .hero {
+    background-image:  url("https://picsum.photos/id/211/1200/800");
+    height: 100%;
+    width: 100%;
+}
+
+.above-fold .hero h1 {
+    position: relative;
+    top: -15px;
+    text-decoration-color: #FFF;
+    z-index: 10;
+}
+
+.middle-content {
+    margin-top: 1.5rem;
+}
+
+.middle-content-upper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1.5rem;
+    width: 100%;
+}
+
+.middle-content-upper .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-flow: row;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.middle-content-upper .content img {
+    max-width: 95%;
+}
+
+.middle-content-upper .content p {
+    max-width: 98%;
+}
+
+.middle-content-lower {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 0.75rem;
+    max-width: 100%;
+}
+
+.middle-content-lower .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 75%;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.card .card-content {
+    display: grid;
+    grid-template-rows: 70% 30%;
+    width: 100%;
+}
+
+.card .card-content img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card .card-content p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+
+.lower-content {
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.lower-content-container {
+    display: grid;
+    grid-auto-columns: 2;
+    padding: 0 1.5rem;
+    width: 100%;
+}
