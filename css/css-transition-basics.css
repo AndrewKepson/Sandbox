@@ -1,0 +1,55 @@
+button {
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.5s;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.move {
+    margin: 2em;
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: red;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: .5em;
+    font-size: 20px;
+    transition-property: translate();
+    transition-duration: 3s;
+}
+
+.move:hover {
+    transform: translate(900px, 0);
+}
+
+#ease {
+    transition-timing-function: ease;
+}
+
+#linear {
+    transition-timing-function: linear;
+}
+
+#ease-in {
+    transition-timing-function: ease-in;
+}
+
+#ease-out {
+    transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+    transition-timing-function: ease-in-out;
+}
